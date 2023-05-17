@@ -9,7 +9,95 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
 </head>
-<body>
+<body class="bg-light">
+    <div class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <div>
+                <a href="#" class="navbar-brand text-uppercase">Osztálykirándulás</a>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link text-uppercase">Terv</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Utazási lehetőségek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Mi valósult meg a tervből?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">Galéria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-0">
+        <div id="main-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/DSC00012.JPG" alt="" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-4 text-uppercase">Budapest látványosságai</h5>
+                        <div class="text-left">
+                            <p class="lead">Valami szöveg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/173gyors.jpg" alt="" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-4 text-uppercase">Utazási lehetőségek</h5>
+                        <div class="text-left">
+                            <p class="lead">Valami szöveg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/gray.jpg" alt="" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-4 text-uppercase">A terv</h5>
+                        <div class="text-left">
+                            <p class="lead">Valami szöveg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#main-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#main-carousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid p-5">
+        <div class="d-flex align-items-center justify-content-around">
+            <div class="btn-group">
+                <button class="btn btn-light dropdown-toggle text-uppercase border-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">kategóriág</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"></a>
+                    <a href="#" class="dropdown-item"></a>
+                    <a href="#" class="dropdown-item"></a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"></a>
+                </div>
+            </div>
+            <div></div>
+
+            <div class="input-group"></div>
+        </div>
+    </div>
+
+
     <script src="./js/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
