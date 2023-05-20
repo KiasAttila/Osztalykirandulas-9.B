@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osztálykirándulás</title>
-    <link rel="stylesheet" href="./css/stilus.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/stilus.css" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/baguetteBox.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/gallery-grid.css" type="text/css">
 </head>
 <body class="bg-light">
     <div class="navbar navbar-expand-md navbar-light">
@@ -30,7 +32,7 @@
                         <a href="#valos" class="nav-link text-uppercase">Mi valósult meg a tervből?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">Galéria</a>
+                        <a href="#galeria" class="nav-link text-uppercase">Galéria</a>
                     </li>
                 </ul>
             </div>
@@ -262,8 +264,71 @@
             </tr>
         </tbody>
     </table>
+    <div style="overflow:hidden;max-width:100%;width:1000px;height:600px;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;" class="tizenhatkilenc"><iframe style="height:100%;width:100%;border:0;" frameborder="0" class="responsive-iframe" src="https://www.google.com/maps/embed/v1/place?q=Budapest,+Margit-sziget,+Magyarország&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#gmap-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+    
+    <div class="container">
+        <div class="container gallery-container">
+            <h1 id="galeria">Galéria</h1>
+            <p class="page-description text-center">Osztálykiránduláson készített képek, videók és hangfelvételek</p>
+            <div class="tz-gallery">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                                <figure><img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                                    <figcaption class="figure-caption">valami szöveg</figcaption>
+                                </figure>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                            <img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                            <img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                            <img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                            <img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="./images/173gyors.jpg" class="lightbox">
+                            <img src="./images/173gyors.jpg" alt="" class="card-img-top">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="./js/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 </body>
 </html>
